@@ -1,0 +1,47 @@
+p{
+	font-size:14px;
+}
+button{
+	width:120px;height:40px;
+}
+input{
+	ime-mode:disabled;width:20px;font-size: 14px;
+}
+ul{
+	list-style-type:none;border:2px solid #000;width:200px;padding-left:0px;
+}
+li{
+	border:1px solid #000;			
+}
+.strong_text{
+	/* keyframes に任意の名前を付ける */
+	-moz-animation-name: 'strong_text1';
+	-webkit-animation-name: 'strong_text1';
+	animation-name: 'strong_text1';
+	-goog-ms-animation-name: 'strong_text1';
+	/* 1動作あたりの秒数 */
+	-moz-animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-goog-ms-animation-duration: 1s;
+	/* 動き方 linear, ease, easein, ease-out, ease-in-out */
+	-moz-animation-timing-function: ease-out;
+	-webkit-animation-timing-function: ease-out;
+	animation-timing-function: ease-out;
+	-goog-ms-animation-timing-function: ease-out;
+	/* 動作 (ここでは回転) の回数を数値で指定、無限ループは infinite */
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-goog-ms-animation-iteration-count: infinite;
+}
+@-webkit-keyframes 'strong_text1' {
+	from {
+		/* 最初の色 */
+		color:#FFF;
+	}
+	/* 変化する色 */
+	to {
+		color:#c0e51c;
+	}
+}
